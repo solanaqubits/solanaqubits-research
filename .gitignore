@@ -1,0 +1,17 @@
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Logs/temp
+*.log
+tmp/
+.temp/
