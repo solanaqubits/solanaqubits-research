@@ -6,6 +6,12 @@ This research note is a practical, transparent snapshot of Solana stake pool del
 
 It does not make financial promises and does not imply endorsement, sponsorship, recommendation, or official partnership with any pool or program.
 
+## Discussion
+
+A short launch and discussion thread for this resource is available on X:
+
+https://x.com/solanaqubits/status/2067259338364711235
+
 ## Methodology
 
 The snapshot is based on Validators.app data, rounded for practical comparison. Stake, validator counts, and averages should be treated as directional rather than exact.

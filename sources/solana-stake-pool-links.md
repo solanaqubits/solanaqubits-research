@@ -4,6 +4,12 @@ Source links referenced by `articles/solana-stake-pool-delegation-landscape.md`.
 
 Last updated: 2026-06-17
 
+## Discussion
+
+A short launch and discussion thread for this resource is available on X:
+
+https://x.com/solanaqubits/status/2067259338364711235
+
 ## Stake pool and delegation program links
 
 - Phase
