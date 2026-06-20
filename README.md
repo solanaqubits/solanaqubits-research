@@ -9,6 +9,12 @@ This repository is intended for transparent, source-linked research notes about 
 - `articles/solana-stake-pool-delegation-landscape.md` — practical snapshot of Solana stake pool delegation programs for validators.
 - `sources/solana-stake-pool-links.md` — source links used for the stake pool delegation landscape research note.
 
+## Related Links
+
+- Research hub: https://solanaqubits.com/research
+- Website article: https://solanaqubits.com/resources/solana-stake-pool-delegation-landscape
+- Resource hub: https://solanaqubits.com/resources
+
 ## Related Discussion
 
 - X thread: https://x.com/solanaqubits/status/2067259338364711235
