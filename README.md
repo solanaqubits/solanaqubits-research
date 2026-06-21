@@ -4,10 +4,12 @@ Markdown research materials from Solana Qubits.
 
 This repository is intended for transparent, source-linked research notes about Solana validators, staking, and ecosystem infrastructure.
 
+The stake pool research now also tracks public validator scoring dashboards, delegation dashboards, active application or interest links, and source-linked program updates.
+
 ## Contents
 
 - `articles/solana-stake-pool-delegation-landscape.md` — practical snapshot of Solana stake pool delegation programs for validators.
-- `sources/solana-stake-pool-links.md` — source links used for the stake pool delegation landscape research note.
+- `sources/solana-stake-pool-links.md` — source links used for the stake pool delegation landscape research note, including public validator dashboards, delegation dashboards, application/interest links, and program updates.
 
 ## Related Links
 
