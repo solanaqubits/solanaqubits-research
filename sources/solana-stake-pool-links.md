@@ -83,6 +83,7 @@ https://x.com/solanaqubits/status/2067259338364711235
 - ValidBlocks Marinade Select dashboard: <https://dashboards.validblocks.com/marinade-select>
 - SAM resources: <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/sam-resources.md>
 - SAM stake matching: <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/stake-matching.md>
+- Validator Bonds agent skills: <https://github.com/marinade-finance/validator-bonds#agent-skills> — official Marinade Validator Bonds repository section for protocol-context agent skills/tooling; tooling/resource reference only and does not imply participation, eligibility, acceptance, delegation, partnership, endorsement, or guaranteed stake
 
 ## JPool
 

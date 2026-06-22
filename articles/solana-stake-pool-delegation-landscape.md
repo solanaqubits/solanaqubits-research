@@ -206,6 +206,7 @@ Marinade is a longer-term target because the route depends on stake auction mech
   - <https://dashboards.validblocks.com/marinade-select>
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/sam-resources.md>
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/stake-matching.md>
+  - <https://github.com/marinade-finance/validator-bonds#agent-skills>
 
 ### Jito
 
@@ -347,12 +348,13 @@ Approval, eligibility, ranking, or board review does not guarantee allocation. V
 - ValidBlocks Marinade Select dashboard: <https://dashboards.validblocks.com/marinade-select>
 - SAM resources: <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/sam-resources.md>
 - SAM stake matching: <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/stake-matching.md>
+- Validator Bonds agent skills: <https://github.com/marinade-finance/validator-bonds#agent-skills>
 
 Marinade Select is described by Marinade as a curated or vetted validator set for institutional staking. It is separate from the open Stake Auction Marketplace path and includes additional validator expectations such as identity verification, bonding, and ongoing performance standards. Acceptance, participation, or delegation is not implied by this research note.
 
 ValidBlocks Marinade Select is a third-party dynamic monitoring dashboard for institutional bond, Select TVL, settlement, bond activity, and validator PnL context. It is not official program rules and does not imply acceptance, participation, eligibility, or delegation.
 
-SAM resources remain relevant Marinade context because they provide dashboards, APIs, auction data, validator bond tooling, and stake matching documentation for validators participating in or monitoring Marinade delegation mechanics.
+SAM resources remain relevant Marinade context because they provide dashboards, APIs, auction data, validator bond tooling, and stake matching documentation for validators participating in or monitoring Marinade delegation mechanics. The Validator Bonds agent skills link is an official Marinade Validator Bonds repository section for protocol-context agent skills/tooling; it is a tooling/resource reference only and does not imply participation, eligibility, acceptance, delegation, partnership, endorsement, or guaranteed stake.
 
 ### Jito BAM claim monitoring
 
@@ -430,6 +432,7 @@ Validators evaluating stake pool or delegation opportunities should monitor:
   - <https://dashboards.validblocks.com/marinade-select>
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/sam-resources.md>
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/stake-matching.md>
+  - <https://github.com/marinade-finance/validator-bonds#agent-skills>
 - Jito:
   - <https://www.jito.network/docs/jitosol/jitosol-liquid-staking/stake-pool-operations/delegation-criteria/>
   - <https://forum.jito.network/t/jip-28-accelerate-bam-adoption/904>
