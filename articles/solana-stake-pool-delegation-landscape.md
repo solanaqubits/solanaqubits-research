@@ -203,6 +203,7 @@ Marinade is a longer-term target because the route depends on stake auction mech
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/marinade-select.md>
   - <https://marinade.finance/blog/marinade-select-unlocking-institutional-staking-on-solana>
   - <https://marinade.finance/institutions>
+  - <https://dashboards.validblocks.com/marinade-select>
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/sam-resources.md>
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/stake-matching.md>
 
@@ -218,6 +219,7 @@ Jito is strategically important, but the BAM/JIP path is difficult for validator
 - Links:
   - <https://www.jito.network/docs/jitosol/jitosol-liquid-staking/stake-pool-operations/delegation-criteria/>
   - <https://forum.jito.network/t/jip-28-accelerate-bam-adoption/904>
+  - <https://dashboards.validblocks.com/bam-claims>
   - <https://www.jito.network/stakenet/steward/>
 
 ### Shinobi xSHIN
@@ -279,6 +281,41 @@ The following public dashboards and tools are useful for validator research, but
 - Research use: validator performance context and scoring visibility for the Shinobi Performance Pool / xSHIN ecosystem.
 - Caveat: values are dynamic and should be checked live; page availability and backend status can change.
 
+### ValidBlocks Stake Pools Analytics
+
+- URL: <https://dashboards.validblocks.com/stakepools>
+- Type: third-party stake pool analytics dashboard.
+- Research use: stake amount, stake percentage, validator count, average stake per validator, total network stake, and pool churn monitoring.
+- Caveat: third-party dynamic dashboard; use for monitoring, not as official program rules. Verify live values and official sources before reuse.
+
+### ValidBlocks Stake Pools Heatmap
+
+- URL: <https://dashboards.validblocks.com/stakepools-heatmap>
+- Type: third-party stake movement heatmap.
+- Research use: stake movement, pool stake changes, validator movement, and pool-specific validator context over recent epochs.
+- Caveat: third-party dynamic dashboard; use for monitoring recent movement, not as official program rules.
+
+### ValidBlocks Validators Live
+
+- URL: <https://dashboards.validblocks.com/validators-live>
+- Type: third-party live validator dashboard.
+- Research use: live validator status, stake, commission, skip rate, leader slots, blocks produced, delinquency, vote credits/rank, version, pool filters, and slot timing.
+- Caveat: live values are dynamic and should not be treated as static facts.
+
+### ValidBlocks Marinade Select
+
+- URL: <https://dashboards.validblocks.com/marinade-select>
+- Type: third-party Marinade Select monitoring dashboard.
+- Research use: institutional validator bonds, Select TVL, settlement context, bond activity, and validator PnL monitoring.
+- Caveat: monitoring source only; inclusion does not imply Marinade Select acceptance, participation, eligibility, or delegation.
+
+### ValidBlocks BAM Claims
+
+- URL: <https://dashboards.validblocks.com/bam-claims>
+- Type: third-party BAM claims monitoring dashboard.
+- Research use: Jito BAM Early Adopter Subsidy claim status, allocated/claimed/pending context, and validator claim context.
+- Caveat: monitoring source only; not an official eligibility, acceptance, or delegation guarantee.
+
 ## New or active delegation opportunities to monitor
 
 These items are useful to monitor because they expose public program criteria, dashboards, application/interest paths, or curated delegation mechanisms. Listing them here does not imply endorsement, partnership, approval, acceptance, or guaranteed delegation.
@@ -307,12 +344,21 @@ Approval, eligibility, ranking, or board review does not guarantee allocation. V
 - Marinade Select docs: <https://docs.marinade.finance/marinade-protocol/protocol-overview/marinade-select.md>
 - Marinade Select announcement: <https://marinade.finance/blog/marinade-select-unlocking-institutional-staking-on-solana>
 - Marinade institutions page: <https://marinade.finance/institutions>
+- ValidBlocks Marinade Select dashboard: <https://dashboards.validblocks.com/marinade-select>
 - SAM resources: <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/sam-resources.md>
 - SAM stake matching: <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/stake-matching.md>
 
 Marinade Select is described by Marinade as a curated or vetted validator set for institutional staking. It is separate from the open Stake Auction Marketplace path and includes additional validator expectations such as identity verification, bonding, and ongoing performance standards. Acceptance, participation, or delegation is not implied by this research note.
 
+ValidBlocks Marinade Select is a third-party dynamic monitoring dashboard for institutional bond, Select TVL, settlement, bond activity, and validator PnL context. It is not official program rules and does not imply acceptance, participation, eligibility, or delegation.
+
 SAM resources remain relevant Marinade context because they provide dashboards, APIs, auction data, validator bond tooling, and stake matching documentation for validators participating in or monitoring Marinade delegation mechanics.
+
+### Jito BAM claim monitoring
+
+- ValidBlocks BAM Claims dashboard: <https://dashboards.validblocks.com/bam-claims>
+
+Tracks public BAM claim status and pending/claimed context where applicable. It is a third-party dynamic monitoring dashboard, not official program rules and not an acceptance, eligibility, or delegation guarantee.
 
 ### JPool Community Good validator stake application form
 
@@ -328,10 +374,12 @@ Validators evaluating stake pool or delegation opportunities should monitor:
 
 - public validator scoring dashboards;
 - stake pool eligibility criteria and source updates;
+- stake pool churn and recent stake movement;
 - application windows, interest forms, or validator onboarding paths;
 - validator commission and MEV commission expectations;
-- uptime, delinquency, and operational performance;
-- performance ranking, vote credits, and vote latency where relevant;
+- uptime, live validator skip rate, leader slots, produced blocks, delinquency, vote credits/rank, version, and slot timing;
+- BAM claim status where applicable;
+- Marinade Select bond, TVL, settlement, and validator PnL context where applicable;
 - SFDP status and external stake composition;
 - public contributions, open-source work, education, infrastructure work, and community initiatives;
 - official documentation, governance, dashboard, and source updates.
@@ -352,6 +400,11 @@ Validators evaluating stake pool or delegation opportunities should monitor:
   - <https://www.jito.network/stakenet/steward/>
   - <https://doublezero.xyz/dzdp/calculator>
   - <https://xshin.fi/#Validators>
+  - <https://dashboards.validblocks.com/stakepools>
+  - <https://dashboards.validblocks.com/stakepools-heatmap>
+  - <https://dashboards.validblocks.com/validators-live>
+  - <https://dashboards.validblocks.com/marinade-select>
+  - <https://dashboards.validblocks.com/bam-claims>
 - JPool:
   - <https://docs.jpool.one/delegation-strategy/how-to-join-jpool-delegation-program.html>
   - <https://docs.jpool.one/delegation-strategy/inclusion-and-removal-criteria.html>
@@ -374,11 +427,13 @@ Validators evaluating stake pool or delegation opportunities should monitor:
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/marinade-select.md>
   - <https://marinade.finance/blog/marinade-select-unlocking-institutional-staking-on-solana>
   - <https://marinade.finance/institutions>
+  - <https://dashboards.validblocks.com/marinade-select>
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/sam-resources.md>
   - <https://docs.marinade.finance/marinade-protocol/protocol-overview/stake-auction-market/stake-matching.md>
 - Jito:
   - <https://www.jito.network/docs/jitosol/jitosol-liquid-staking/stake-pool-operations/delegation-criteria/>
   - <https://forum.jito.network/t/jip-28-accelerate-bam-adoption/904>
+  - <https://dashboards.validblocks.com/bam-claims>
   - <https://www.jito.network/stakenet/steward/>
 - Shinobi xSHIN:
   - <https://xshin.fi/#Strategy>
