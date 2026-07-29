@@ -2,6 +2,8 @@
 
 Last updated: 2026-06-21
 
+Editorially updated: 2026-07-29
+
 This research note is a practical, transparent snapshot of Solana stake pool delegation programs for validators, stakers, staking pool operators, and ecosystem contributors.
 
 It does not make financial promises and does not imply endorsement, sponsorship, recommendation, or official partnership with any pool or program.
@@ -282,13 +284,6 @@ The following public dashboards and tools are useful for validator research, but
 - Research use: validator performance context and scoring visibility for the Shinobi Performance Pool / xSHIN ecosystem.
 - Caveat: values are dynamic and should be checked live; page availability and backend status can change.
 
-### ValidBlocks Stake Pools Analytics
-
-- URL: <https://dashboards.validblocks.com/stakepools>
-- Type: third-party stake pool analytics dashboard.
-- Research use: stake amount, stake percentage, validator count, average stake per validator, total network stake, and pool churn monitoring.
-- Caveat: third-party dynamic dashboard; use for monitoring, not as official program rules. Verify live values and official sources before reuse.
-
 ### ValidBlocks Stake Pools Heatmap
 
 - URL: <https://dashboards.validblocks.com/stakepools-heatmap>
@@ -296,12 +291,19 @@ The following public dashboards and tools are useful for validator research, but
 - Research use: stake movement, pool stake changes, validator movement, and pool-specific validator context over recent epochs.
 - Caveat: third-party dynamic dashboard; use for monitoring recent movement, not as official program rules.
 
-### ValidBlocks Validators Live
+### ValidBlocks Solana Validators Profitability (SVP)
 
-- URL: <https://dashboards.validblocks.com/validators-live>
-- Type: third-party live validator dashboard.
-- Research use: live validator status, stake, commission, skip rate, leader slots, blocks produced, delinquency, vote credits/rank, version, pool filters, and slot timing.
+- URL: <https://dashboards.validblocks.com/svp>
+- Type: third-party per-validator profitability dashboard; replaces the retired `/validators-live` route (checked 2026-07-29; the old route now 404s).
+- Research use: per-validator client, version, commission, Jito/MEV split, stake, and a rewards/costs/profit breakdown, with SFDP and vote-lagging filters.
 - Caveat: live values are dynamic and should not be treated as static facts.
+
+### Sandwiched.me validators (SFDP filter)
+
+- URL: <https://sandwiched.me/validators?sort=activeStake_desc&stakeSource=SFDP>
+- Type: third-party filterable validator directory.
+- Research use: client/version, Ghost Score, Slot Time Score, and 30d/60d sandwich percentage per validator; this view filters to SFDP-sourced stake.
+- Caveat: Ghost Score and sandwich percentage are Sandwiched.me's own methodology, not independently verified.
 
 ### ValidBlocks Marinade Select
 
@@ -402,11 +404,11 @@ Validators evaluating stake pool or delegation opportunities should monitor:
   - <https://www.jito.network/stakenet/steward/>
   - <https://doublezero.xyz/dzdp/calculator>
   - <https://xshin.fi/#Validators>
-  - <https://dashboards.validblocks.com/stakepools>
   - <https://dashboards.validblocks.com/stakepools-heatmap>
-  - <https://dashboards.validblocks.com/validators-live>
+  - <https://dashboards.validblocks.com/svp>
   - <https://dashboards.validblocks.com/marinade-select>
   - <https://dashboards.validblocks.com/bam-claims>
+  - <https://sandwiched.me/validators?sort=activeStake_desc&stakeSource=SFDP>
 - JPool:
   - <https://docs.jpool.one/delegation-strategy/how-to-join-jpool-delegation-program.html>
   - <https://docs.jpool.one/delegation-strategy/inclusion-and-removal-criteria.html>

@@ -4,6 +4,8 @@ Source links referenced by `articles/solana-stake-pool-delegation-landscape.md`.
 
 Last updated: 2026-06-21
 
+Editorially updated: 2026-07-29
+
 ## Discussion
 
 A short launch and discussion thread for this resource is available on X:
@@ -63,11 +65,11 @@ https://x.com/solanaqubits/status/2067259338364711235
 - Jito StakeNet Steward: <https://www.jito.network/stakenet/steward/>
 - DoubleZero DZDP calculator: <https://doublezero.xyz/dzdp/calculator>
 - xSHIN validators page: <https://xshin.fi/#Validators>
-- ValidBlocks Stake Pools Analytics: <https://dashboards.validblocks.com/stakepools> — third-party dynamic monitoring dashboard; not official program rules
 - ValidBlocks Stake Pools Heatmap: <https://dashboards.validblocks.com/stakepools-heatmap> — third-party dynamic monitoring dashboard; not official program rules
-- ValidBlocks Validators Live: <https://dashboards.validblocks.com/validators-live> — third-party dynamic monitoring dashboard; not a static fact source
+- ValidBlocks Solana Validators Profitability (SVP): <https://dashboards.validblocks.com/svp> — third-party dynamic monitoring dashboard; per-validator profitability (client, version, commission, Jito/MEV, rewards/costs/profit) with SFDP and vote-lagging filters; replaces the retired `/validators-live` route (checked 2026-07-29)
 - ValidBlocks Marinade Select: <https://dashboards.validblocks.com/marinade-select> — third-party dynamic monitoring dashboard; does not imply acceptance, eligibility, or delegation
 - ValidBlocks BAM Claims: <https://dashboards.validblocks.com/bam-claims> — third-party dynamic monitoring dashboard; not an official eligibility or delegation guarantee
+- Sandwiched.me validators (SFDP filter): <https://sandwiched.me/validators?sort=activeStake_desc&stakeSource=SFDP> — third-party filterable validator directory with client/version, Ghost Score, Slot Time Score, and 30d/60d sandwich percentage; this view filters to SFDP-sourced stake; scores are Sandwiched.me's own methodology, not independently verified
 
 ## Vault
 

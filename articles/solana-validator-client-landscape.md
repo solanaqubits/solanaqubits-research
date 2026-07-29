@@ -4,7 +4,7 @@ A source-linked classification guide to Solana validator clients, forks, hybrid 
 
 Status checked: 2026-07-22
 
-Editorially updated: 2026-07-23
+Editorially updated: 2026-07-29
 
 Status: public research snapshot
 
@@ -115,6 +115,7 @@ The dashboards referenced by the website article do not all measure the same thi
 | Encapsulate network graph | Interactive visualization of validators, delegators, clients, and stake distribution. | Visible methodology/API was not found in the checked shell. | Exploratory visualization only. | Publishing exact adoption figures without methodology. |
 | ValidBlocks stake-pool heatmaps | Per-validator pool stake movement over recent epochs. | Pool-specific heatmap, not validator-client adoption. | Pool movement and allocation context. | Inferring full Firedancer or network-wide client adoption. |
 | GD Index | Geographic decentralisation across country, city, and network operator/ASN. | Its own validator/location methodology, not client implementation share. | Decentralisation and hosting-location context. | Claiming client adoption or specific pool use without first-party evidence. |
+| Sandwiched.me client distribution | Per-client stake share, validator count, top validator, version fragmentation, plus Sandwiched.me's own Weighted Ghost Score and sandwich-rate labels. | Stated at check time: 704 validators / 428.4M SOL tracked by Sandwiched.me, not the full network. | Client stake-share and version-fragmentation context with the stated denominator. | Treating the Ghost Score or sandwich percentage as independently verified, network-wide MEV-safety fact. |
 
 - **Blockworks validator client dashboards** provide secondary client-label context, but the checked pages do not expose enough methodology to treat their categories as independent implementations or whole-network truth.
 - **Firedancer Reports** displays labels for a filtered validator sample. The checked API context used `period=twentyday` and `minStake=400000`; that is a filtered sample, not a whole-network denominator.
@@ -123,12 +124,15 @@ The dashboards referenced by the website article do not all measure the same thi
 - **Encapsulate’s network graph** is useful as an exploratory visualization, but exact adoption figures should not be published from it without visible methodology and denominator details.
 - **ValidBlocks stake-pool heatmaps** show pool-specific stake movement. They do not establish validator-client adoption, including full Firedancer adoption.
 - **GD Index** measures geographic decentralisation across country, city, and network operator/ASN dimensions. It is not a client-implementation share metric.
+- **Sandwiched.me's client distribution page** reports per-client stake share, validator counts, and version fragmentation with a stated denominator (704 validators / 428.4M SOL at check time). Its Weighted Ghost Score and sandwich-rate labels are Sandwiched.me's own MEV-safety methodology, not an independently verified network-wide figure.
 
-Do not combine a GUI instance, filtered report sample, pool heatmap, behavior index, and network visualization into one adoption percentage. Dynamic values and methodologies should be checked live before reuse.
+Do not combine a GUI instance, filtered report sample, pool heatmap, behavior index, client-distribution table, and network visualization into one adoption percentage. Dynamic values and methodologies should be checked live before reuse.
 
 ## Rakurai
 
 Rakurai describes a validator stack derived from the Jito/Agave lineage together with scheduler, activation, reward-distribution, and tip-manager infrastructure. Product and economic statements should remain attributed to Rakurai. Public documentation and onboarding materials do not independently establish production adoption or outcomes.
+
+Rakurai's own transaction-inclusion documentation, aimed at searchers, block engines, and partners, describes bundle support across multiple block engines with automatic lowest-latency connection, a "virtual priority boost" — an additional tip-style instruction that can boost inclusion for both TPU transactions and bundles without replacing regular priority fees — and post-pack confirmations, a gRPC feed of on-chain transaction updates generated from the point of no return in the pipeline, using the same packet protocol as the Jito relayer. These remain Rakurai-described mechanisms rather than independently verified performance claims.
 
 ## Harmonic
 
@@ -180,7 +184,7 @@ These are research categories, not forecasts or guarantees. Application or onboa
 | Firedancer / Frankendancer | Frankendancer offers a hybrid path while full Firedancer continues development. | Payer not publicly specified; Frankendancer available, while full Firedancer is not ready for test/production according to the official repository. | Migration testing, monitoring, and performance engineering. | Immature software, misclassification, and dashboard-label overinterpretation. |
 | Jito-Solana | Integrates validator operation with Jito MEV and Block Engine flows. | Searchers/orderflow participants through Jito ecosystem mechanics; active fork/distribution. | Client operations, upgrades, monitoring, and MEV-policy review. | Jito dependency, MEV centralisation concerns, and version drift. |
 | BAM | Connects compatible validators to external schedulers through documented BAM URLs. BAM remains infrastructure, not a consensus client. | Payer not publicly specified in enough detail for guaranteed economics; mainnet/testnet URLs documented. | Configuration and operational monitoring; BAM documentation says no equipment upgrades. | TEE/scheduler trust, external block assembly, and infrastructure dependency. |
-| Rakurai | Rakurai says its scheduler/orderflow stack can improve block rewards and MEV tips. | Not fully publicly specified; public onboarding/docs, with independent adoption not fully verified. | Integration, monitoring, and possible future commission described by Rakurai. | Scheduler trust, reward-distribution assumptions, and vendor-claim uncertainty. |
+| Rakurai | Rakurai says its scheduler/orderflow stack can improve block rewards and MEV tips. Its transaction-inclusion docs also describe bundle support across multiple block engines, a "virtual priority boost" (an additional tip-style instruction that can boost inclusion for TPU transactions and bundles without replacing priority fees), and post-pack confirmations (a gRPC feed of on-chain transaction updates for searchers/partners). | Not fully publicly specified; public onboarding/docs, with independent adoption not fully verified. | Integration, monitoring, and possible future commission described by Rakurai. | Scheduler trust, reward-distribution assumptions, vendor-claim uncertainty, and reliance on partner-operated block engines/gRPC endpoints registered through on-chain PDAs. |
 | Harmonic | Harmonic describes an open block-building system and validator tip mechanics. | Not publicly specified in enough detail for a revenue model; application/onboarding and whitelist model. | Salsa/Samba integration and Block Engine connectivity. | Builder/Block Engine trust boundaries, scheduler policy, and onboarding uncertainty. |
 | Flowra | Roadmap describes open orderflow auctions intended to increase validator revenue. | Payer not publicly specified; developing/roadmap status, with launch and adoption not independently confirmed. | Jito-derived client plus sidecar, gateway, auctioneer, and builder integration if launched. | Roadmap execution, adoption uncertainty, and orderflow trust assumptions. |
 | SWQoS | Stake-weighted QoS can affect transaction forwarding and peering strategy. | Indirect network-performance value, not a direct client revenue program; documented Solana feature. | Networking and operational coordination. | Misconfiguration and overclaiming SWQoS as a validator client. |

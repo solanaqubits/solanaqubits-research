@@ -2,7 +2,7 @@
 
 Status checked: 2026-07-22
 
-Editorially updated: 2026-07-23
+Editorially updated: 2026-07-29
 
 Companion source list for:
 
@@ -68,6 +68,10 @@ This source index follows the website article’s evidence hierarchy. Official r
 - Rakurai validator repository
   https://github.com/rakurai-io/rakurai-validator
   Primary source for Rakurai’s validator fork lineage and repository context.
+
+- Rakurai transaction inclusion guide
+  https://docs.rakurai.io/docs/services/rakurai_jito_private/rakurai_docs/transaction_inclusion/transaction_inclusion
+  First-party guide for searchers, block engines, and partners describing bundle support across multiple block engines, the virtual priority boost mechanism, and post-pack confirmations. Vendor-stated mechanism description, not independently verified adoption.
 
 - Harmonic documentation
   https://docs.harmonic.gg/
@@ -154,6 +158,10 @@ This source index follows the website article’s evidence hierarchy. Official r
 - GD Index repository
   https://github.com/esterhuizen/sgdi
   Open-source repository and methodology context for GD Index.
+
+- Sandwiched.me client distribution
+  https://sandwiched.me/clients
+  Per-client stake share, validator counts, top validator, and version fragmentation, checked with a stated 704-validator/428.4M SOL denominator. Its Weighted Ghost Score and sandwich-rate labels are Sandwiched.me's own methodology, not independently verified.
 
 ### Secondary historical context
 
