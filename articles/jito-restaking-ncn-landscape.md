@@ -16,6 +16,12 @@ Website article: https://solanaqubits.com/research/jito-restaking-ncn-landscape
 
 This research snapshot is informational. It is not financial, investment, legal, security, or validator-operations advice. It does not imply endorsement, partnership, official approval, eligibility, acceptance, guaranteed stake, guaranteed delegation, guaranteed APY, guaranteed profit, or guaranteed earnings. Inclusion of any network, vault, or operator is descriptive only. Verify current official sources and live onchain state before making infrastructure or validator decisions.
 
+## Discussion
+
+A short launch and discussion thread for this resource is available on X:
+
+https://x.com/solanaqubits/status/2082464994029944903
+
 ## Executive summary
 
 - **Jito Restaking is two programs.** A restaking program that acts as a registry and holds no funds, and a vault program that holds tokenized stake. Both share the same address across mainnet, testnet, and devnet.

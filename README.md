@@ -34,7 +34,8 @@ The quantum computing research snapshot tracks public scientific publications, s
 
 ## Related Discussion
 
-- X thread: https://x.com/solanaqubits/status/2067259338364711235
+- Stake pool delegation landscape X thread: https://x.com/solanaqubits/status/2067259338364711235
+- Jito Restaking and NCN X thread: https://x.com/solanaqubits/status/2082464994029944903
 
 ## Disclaimer
 

@@ -9,6 +9,12 @@ Companion source list for:
 
 This source index follows the website article's evidence hierarchy. Official documentation and the Apache-2.0 program repository are primary for structural claims. The official interface is the only source used for entity names, status labels, and published totals. Onchain measurements were taken independently through a public RPC endpoint and are reported alongside official figures rather than replacing them.
 
+## Discussion
+
+A short launch and discussion thread for this resource is available on X:
+
+https://x.com/solanaqubits/status/2082464994029944903
+
 ## Primary protocol documentation
 
 - Jito (Re)staking overview
