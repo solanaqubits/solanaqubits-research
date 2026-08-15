@@ -4,6 +4,8 @@ Last updated: 2026-06-21
 
 Editorially updated: 2026-07-29
 
+Scoped rkuSOL monitoring update: 2026-08-15
+
 This research note is a practical, transparent snapshot of Solana stake pool delegation programs for validators, stakers, staking pool operators, and ecosystem contributors.
 
 It does not make financial promises and does not imply endorsement, sponsorship, recommendation, or official partnership with any pool or program.
@@ -21,6 +23,8 @@ The snapshot is based on Validators.app data, rounded for practical comparison. 
 Difficulty is estimated for an SFDP validator with 0–5% validator commission and 0% Jito MEV commission.
 
 Difficulty is subjective. It reflects practical fit, apparent eligibility path, and likely outreach effort, not a guarantee of acceptance or delegation.
+
+The canonical website comparison contains 15 actionable programs. rkuSOL is tracked below as a separate monitoring-only target because no working public validator-admission route was verified; it does not become a 16th actionable entry.
 
 ## Difficulty scale
 
@@ -372,6 +376,47 @@ The form is titled “JPool Stake Application for Community Good Validators.” 
 
 This should be treated as an application or interest form only. Submitting an application does not guarantee review, approval, stake, or delegation.
 
+### rkuSOL / Raiku — monitoring only
+
+rkuSOL is a live Raiku-branded LST built on Sanctum stake-pool infrastructure. Raiku says deposits are allocated to validators running its AOT/JIT-enabled client; Sanctum provides the LST and stake-pool infrastructure. The client remains limited to pilot partners, and the public validator form linked by Raiku returned HTTP 404 when rechecked on 2026-08-15. Raiku's contact page is therefore an inquiry channel only, not a verified application or a guarantee of admission, a validator-list slot, stake, timing, fee revenue, APY, or yield.
+
+A finalized mainnet snapshot at slot `439,419,080` in epoch `1017` on 2026-08-15 found exactly one active validator-list entry:
+
+- Sanctum SPL Stake Pool program: `SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY`
+- Pool state: `ERhozr6u9drmAANXGRNP1oh3quSqPKEwioKH5b8v9Kkt`
+- rkuSOL mint: `rkubjTrZYioRSeXwDnhwGQzvW3qkcin72JSxUt3WMVp`
+- Validator list: `BtRJM6kHw9hEKZRPtkcNG5F1T5FxZrBwdBzUXzVo8WY2`
+- Current vote account: `AVD61fbwxDGuLGCanPWQPxRjdqYk3icssz5u7JH8kbta`
+- Active pool stake: `187,167.943 SOL`; transient stake: `0 SOL`; share of delegated validator stake: `100%`
+- Pool-state accounting: `187,168.173 SOL`, published here as a rounded, dated `~187.2k SOL` observation
+
+Sanctum's interface displayed about `187,253.88 SOL` during the same review. Keep that higher UI TVL separate because it may be dynamic or cached; it must not replace the finalized pool-accounting figure. The vote account showed 0% Solana inflation commission, but that does not establish its Raiku-tip or Jito-tip commissions, total rkuSOL allocation beyond the pool-list entry, future performance, or continued inclusion.
+
+The finalized pool state encoded a 2.5% epoch/reward fee, 0% SOL and stake deposit fees, and 0.1% fees for both SOL and stake withdrawals. Raiku's rkuSOL page also discloses a 2.5% Sanctum fee on staking rewards, but the on-chain withdrawal fees conflict with Raiku's general FAQ wording that says there are no withdrawal fees. Recheck the live contract state, current official wording, and a fresh transaction preview before quoting costs or acting.
+
+Raiku's June 2026 launch article said six external validator partners were committed for mainnet and that more validators would join through Q3. The finalized August 15 validator list contained one active entry, so the six-partner statement is historical pipeline language rather than evidence of six current pool validators. No public selection scorecard, allocation formula, stake cap, rebalancing cadence, rkuSOL-specific commission ceiling, review SLA, or guaranteed allocation was found.
+
+The official quickstart describes `raiku-agave` access for pilot partners, while the repository linked in the docs was not publicly accessible on the checked date. Contacting Raiku, joining its Discord, receiving pilot access, or installing the client does not guarantee rkuSOL acceptance or allocation. Material risks include current single-validator concentration, pilot/private-client dependency, manager/staker allocation discretion, validator performance, stake-pool and smart-contract exposure, Sanctum dependency, LST liquidity/redemption/depeg risk, and variable or zero incremental AOT/JIT or MEV revenue.
+
+Primary sources checked 2026-08-15:
+
+- Website: <https://www.raiku.com/>
+- X / Twitter: <https://x.com/raikucom>
+- rkuSOL documentation: <https://docs.raiku.com/staking/rkusol>
+- Staking fee FAQ: <https://docs.raiku.com/staking/staking-faqs>
+- Validator quickstart: <https://docs.raiku.com/validator-quickstart>
+- Published apply page: <https://docs.raiku.com/apply-1>
+- Published validator form — returned HTTP 404 on the checked date: <https://forms.raiku.com/earn_with_raiku>
+- Contact Raiku — inquiry only: <https://raiku.com/contact-us>
+- Sanctum rkuSOL app: <https://app.sanctum.so/stake/rkuSOL>
+- Sanctum launch article: <https://sanctum.so/blog/raiku-launches-rkusol-lst-with-sanctum>
+- Raiku launch article and historical six-partner pipeline statement: <https://raiku.com/blog/rkusol-a-third-yield-source-enters-the-solana-lst-stack>
+- Pool state: <https://explorer.solana.com/address/ERhozr6u9drmAANXGRNP1oh3quSqPKEwioKH5b8v9Kkt>
+- Validator list: <https://explorer.solana.com/address/BtRJM6kHw9hEKZRPtkcNG5F1T5FxZrBwdBzUXzVo8WY2>
+- rkuSOL mint: <https://explorer.solana.com/address/rkubjTrZYioRSeXwDnhwGQzvW3qkcin72JSxUt3WMVp>
+- Current vote account: <https://explorer.solana.com/address/AVD61fbwxDGuLGCanPWQPxRjdqYk3icssz5u7JH8kbta>
+- Risk disclosures: <https://docs.raiku.com/legal/disclosures>
+
 ## What validators should monitor
 
 Validators evaluating stake pool or delegation opportunities should monitor:
@@ -443,6 +488,22 @@ Validators evaluating stake pool or delegation opportunities should monitor:
 - Shinobi xSHIN:
   - <https://xshin.fi/#Strategy>
   - <https://xshin.fi/#Validators>
+- rkuSOL / Raiku — monitoring only; not a 16th actionable entry:
+  - <https://www.raiku.com/>
+  - <https://x.com/raikucom>
+  - <https://docs.raiku.com/staking/rkusol>
+  - <https://docs.raiku.com/staking/staking-faqs>
+  - <https://docs.raiku.com/validator-quickstart>
+  - <https://docs.raiku.com/apply-1>
+  - <https://raiku.com/contact-us>
+  - <https://app.sanctum.so/stake/rkuSOL>
+  - <https://sanctum.so/blog/raiku-launches-rkusol-lst-with-sanctum>
+  - <https://raiku.com/blog/rkusol-a-third-yield-source-enters-the-solana-lst-stack>
+  - <https://explorer.solana.com/address/ERhozr6u9drmAANXGRNP1oh3quSqPKEwioKH5b8v9Kkt>
+  - <https://explorer.solana.com/address/BtRJM6kHw9hEKZRPtkcNG5F1T5FxZrBwdBzUXzVo8WY2>
+  - <https://explorer.solana.com/address/rkubjTrZYioRSeXwDnhwGQzvW3qkcin72JSxUt3WMVp>
+  - <https://explorer.solana.com/address/AVD61fbwxDGuLGCanPWQPxRjdqYk3icssz5u7JH8kbta>
+  - <https://docs.raiku.com/legal/disclosures>
 
 ## Disclaimer
 
